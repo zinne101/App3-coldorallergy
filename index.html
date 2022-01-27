@@ -139,7 +139,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 </div>	
 
-<div class="page" id="results">
+<div class="page" id="five">
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
 	<p id="results"></p> 
@@ -148,14 +148,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<div id="content" class="w3-container">
 		<button onclick="results()">Results</button>
 
-<p id="five"></p>
-
 <script>
 	function results() {
 		var resultText = document.getElementById("results")
 		var AllergyPercent: (allergy_count/4)*100
 		var ColdPercent: (cold_count/4)*100
-		document.getElementById("results").innerHTML = "Probability it is allergies =" + AllergyPercent + "<br> Probability it is a cold =" + ColdPercent"
+		resultsText.innerHTML = "Probability it is allergies =" + AllergyPercent + "<br> Probability it is a cold =" + ColdPercent"
 	}
 	
 </script>
