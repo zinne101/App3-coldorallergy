@@ -7,7 +7,7 @@ THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.
  
 Authors in chronological order of contribution:
 Tim Riedel
-Author 2
+Zinne Njoku
  
 Further Information:
 http://cns.utexas.edu/fri
@@ -17,10 +17,10 @@ Timothy Riedel
 triedel@utexas.edu
  
 Brief Description of Goal of Code:
-blah, blah, blah,
+This app serves as survey to determine a patient's probability of having having either a cold or allergies based on their symptoms. 
  
 Known Issues:
-blah, blah, blah, blah
+An issue encountered when creating this code was with creating a results button the 
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -92,50 +92,60 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 
 <div class="page" id="one">
+<!-- This is the first page with the questions --!>
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
+                <!-- This is the header for page one --!> 
 </div>
+<!-- This is a divider to separate the text --!> 
+
     	<div id="content" class="w3-container">
-        <p>Are your eyes watery or itchy?</p>  
-    	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-green"> Yes </a>
-	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-red"> No </a>
+        <p>Are your eyes watery or itchy?</p>  <!-- First question --!> 
+    	<a href="#two"  onclick="allergyAdd();" class="w3-btn w3-green"> Yes </a>  <!-- This green button answers yes for the question and adds to the allergy count --!> 
+	<a href="#two"  onclick="coldAdd();" class="w3-btn w3-red"> No </a>  <!-- This red button answers no for the question and adds to the cold count --!> 
 	</div>
 	
 </div>
 	
 <div class="page" id="two">
+<!-- Page two --!> 
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
 	</div>
-	
+	<!-- Divider to separate the text --!> 
+
 	<div id="content" class="w3-container">
-		<p>Do you have a fever?</p>
-	<a href="#three"  onclick="coldAdd();"  class="w3-btn w3-green"> Yes </a>
-	<a href="#three"  onclick="allergyAdd();"  class="w3-btn w3-red"> No </a>
+		<p>Do you have a fever?</p>  <!-- Second question --!> 
+	<a href="#three"  onclick="coldAdd();"  class="w3-btn w3-green"> Yes </a>  <!-- This green button answers yes for the question and adds to the cold count --!> 
+	<a href="#three"  onclick="allergyAdd();"  class="w3-btn w3-red"> No </a>  <!-- This red button answers no for the question and adds to the allergy count --!>
 	</div>
 </div>	
 
 <div class="page" id="three">
+<!-- Page three --!> 
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
 	</div>
-	
+	<!-- Divider to separate text --!> 
+
 	<div id="content" class="w3-container">
-		<p>Do you have a sore throat?</p>
-	<a href="#four"  onclick="coldAdd();"  class="w3-btn w3-green"> Yes </a>
-	<a href="#four"  onclick="allergyAdd();"  class="w3-btn w3-red"> No </a>
+		<p>Do you have a sore throat?</p>  <!-- Third Question --!> 
+	<a href="#four"  onclick="coldAdd();"  class="w3-btn w3-green"> Yes </a>  <!-- This green button answers yes for the question and adds to the cold count --!>
+	<a href="#four"  onclick="allergyAdd();"  class="w3-btn w3-red"> No </a>  <!-- This red button answers no for the question and adds to the allergy count --!>
 	</div>
 </div>	
 	
 <div class="page" id="four">
+<!-- Page four --!> 
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
 	</div>
-	
+	<!-- Divider to separate text --!> 
+
 	<div id="content" class="w3-container">
-		<p>Are your symptoms seasonal or chronic?</p>
-	<a href="#five"  onclick="allergyAdd();"  class="w3-btn w3-green"> Yes </a>
-	<a href="#five"  onclick="coldAdd();"  class="w3-btn w3-red"> No </a>
+		<p>Are your symptoms seasonal or chronic?</p> <!-- Last question --!>
+	<a href="#five"  onclick="allergyAdd();"  class="w3-btn w3-green"> Yes </a>  <!-- This green button answers yes for the question and adds to the allergy count --!>
+	<a href="#five"  onclick="coldAdd();"  class="w3-btn w3-red"> No </a>  <!-- This red button answers no for the question and adds to the cold count --!>
 	</div>
 </div>	
 
