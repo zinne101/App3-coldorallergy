@@ -20,7 +20,7 @@ Brief Description of Goal of Code:
 This app serves as survey to determine a patient's probability of having having either a cold or allergies based on their symptoms. 
  
 Known Issues:
-An issue encountered when creating this code was with creating a results button the 
+An issue encountered when creating this code was with creating a results button that outputted the results. 
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -49,7 +49,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
             cold_count = cold_count + 1;
         }
 
+	function results() {
+		var resultText = document.getElementById("results")
+		var AllergyPercent: (allergy_count/4)*100
+		var ColdPercent: (cold_count/4)*100
+		resultsText.innerHTML = "Probability it is allergies =" + AllergyPercent + "<br> Probability it is a cold =" + ColdPercent"
+	}
 	
+</script>
 
   </script>
 
@@ -156,17 +163,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 	
 	<div id="content" class="w3-container">
-		<button onclick="results()">Results</button>
+		<a href=""five"  onclick="results();"  class="w3-btn w3-black"> Results </a>
 
-		<p id="results"></p>
-		
-<script>
-	function results() {
-		var resultText = document.getElementById("results")
-		var AllergyPercent: (allergy_count/4)*100
-		var ColdPercent: (cold_count/4)*100
-		resultsText.innerHTML = "Probability it is allergies =" + AllergyPercent + "<br> Probability it is a cold =" + ColdPercent"
-	}
 	
 </script>
 
