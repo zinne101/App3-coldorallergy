@@ -20,7 +20,7 @@ Brief Description of Goal of Code:
 This app serves as survey to determine a patient's probability of having having either a cold or allergies based on their symptoms. 
  
 Known Issues:
-An issue encountered when creating this code was with creating a results button that outputted the results. 
+An issue encountered when creating this code was with creating a results button that displayed the results. 
 
 https://www.w3schools.com/w3css/default.asp
 https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-file
@@ -85,13 +85,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1>
+	<h1>Cold or Allergies?</h1> <!-- This is the title of the main page --> 
 </div>
 	
 <div id="content" class="w3-container">
 	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>
+	<!-- This button is used to get to the first page with the questions --> 
 	
 	<p>The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at 		Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only. Any user of this code 			does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.</p>
  	
@@ -117,6 +118,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!-- Page two --> 
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 2</h1>
+		<!-- Header for question two --> 
 	</div>
 	<!-- Divider to separate the text --> 
 
@@ -131,6 +133,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!-- Page three --> 
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 3</h1>
+		<!-- Header for question three --> 
 	</div>
 	<!-- Divider to separate text --> 
 
@@ -145,6 +148,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <!-- Page four --> 
 	<div class="w3-container w3-flat-carrot">
 		<h1>Question 4</h1>
+		<!-- Header for question four --> 
 	</div>
 	<!-- Divider to separate text --> 
 
@@ -156,15 +160,17 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 </div>	
 
 <div class="page" id="five">
+<!-- This is the fifth page that holds the results --> 
 	<div class="w3-container w3-flat-carrot">
 		<h1>Results</h1>
+		<!-- This the header for the results page --> 
 	</div>
+	<!-- Divider to separate text --> 
 	
 	<div id="content" class="w3-container">
-<p id="results"></p>
-		<a onclick="resultsPercentage();" class="w3-btn w3-black"> Results </a>
-
-	
+<p id="results"></p> <!-- This tells the button where to place the text for the function --> 
+		<a onclick="resultsPercentage();" class="w3-btn w3-black"> Results </a> 
+		<!-- This the button that has the function to display the result functions --> 
 
 	</div>
 </div>	
